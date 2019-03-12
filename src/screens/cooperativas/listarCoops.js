@@ -41,7 +41,7 @@ export default class ListarCoops extends Component {
           <List
             dataArray={this.state.cooperativas}
             renderRow={coop =>
-              <ListItem>
+              <ListItem onPress={() => this.navigation.navigate("InfoCoop")}>
                 <Body>
                   <Text>
                     {coop.nombre}

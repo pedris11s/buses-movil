@@ -125,6 +125,7 @@ import Register from "./screens/register/register";
 import Home from "./screens/home";
 import ListarCoops from "./screens/cooperativas/listarCoops";
 import ListarBuses from "./screens/buses/listarBuses";
+import InfoCoop from "./screens/cooperativas/infoCoop";
 
 const Drawer = DrawerNavigator(
   {
@@ -169,7 +170,10 @@ const AppNavigator = StackNavigator(
 
     Register: { screen: Register },
     Home: { screen: Home },
+    
     ListarCoops: { screen: ListarCoops },
+    InfoCoop: { screen: InfoCoop },
+    
     ListarBuses: { screen: ListarBuses },
 
     Header1: { screen: Header1 },

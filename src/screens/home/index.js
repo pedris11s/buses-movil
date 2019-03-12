@@ -52,12 +52,12 @@ export default class Home extends Component {
         iconL = "bus"
         iconR = "search"
         break;
-      case 2:
-        AppComponent = TabsRating;
-        text = "Rating"
-        iconL = "star"
-        iconR = "search"
-        break;
+      // case 2:
+      //   AppComponent = TabsRating;
+      //   text = "Rating"
+      //   iconL = "star"
+      //   iconR = "search"
+      //   break;
     }
     return (
       <Container>
@@ -73,9 +73,9 @@ export default class Home extends Component {
             <Button active={this.state.tabs[1]} onPress={() => this.switchScreen(1)}>
               <Icon active={this.state.tabs[1]} name="bus" />
             </Button>
-            <Button active={this.state.tabs[2]} onPress={() => this.switchScreen(2)}>
+            {/* <Button active={this.state.tabs[2]} onPress={() => this.switchScreen(2)}>
               <Icon active={this.state.tabs[2]} name="star" />
-            </Button>
+            </Button> */}
           </FooterTab>
         </Footer>
       </Container>
